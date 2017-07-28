@@ -1,0 +1,24 @@
+name:                keycode
+version:             0.1
+synopsis:            Pattern Synonyms for web browser keycodes
+homepage:            https://github.com/daig/keycode
+bug-reports:         https://github.com/daig/keycode/issues
+license:             BSD3
+license-file:        LICENSE
+author:              Dai
+stability:           Experimental
+category:            Web
+build-type:          Simple
+tested-with:         GHC == 8.0.2
+cabal-version:       >=1.10
+
+source-repository head
+  type:                git
+  location:            https://github.com/daig/keycode
+
+library
+  exposed-modules:     Web.KeyCode
+  build-depends:       base             >= 4.8 && < 5
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  ghc-options:         -Wall
